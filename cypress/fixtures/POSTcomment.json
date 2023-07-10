@@ -1,0 +1,5 @@
+{
+  "name": "Using POST in cy.intercept()",
+  "email": "hello@cypress.io",
+  "body": "You can change the method used for cy.intercept() to be GET, POST, PUT, PATCH, or DELETE"
+}

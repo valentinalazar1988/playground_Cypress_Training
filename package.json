@@ -1,0 +1,33 @@
+{
+  "name": "trainingArobs",
+  "version": "1.0.0",
+  "description": "Cypress Automation Training Program by Arobs",
+  "main": "index.js",
+  "scripts": {
+    "cy:open:cypressQA": "npx cypress open --config-file cypressQAenv.config.js",
+    "cy:open:cypressPROD": "npx cypress open --config-file cypressPRODenv.config.js",
+    "c:open": "npx cypress open",
+    "cy:test:all": "npx cypress run",
+    "cy:test:spec": "npx cypress run --spec cypress/e2e/tutorialsNinja/homepage.cy.js",
+    "cy:test:todo:example": "npx cypress run --config-file cypressPRODenv.config.js --spec cypress/e2e/2-advanced-examples/actions.cy.js",
+    "cy:test:actions:locations": "npx cypress run --config-file cypressQAenv.config.js --spec cypress/e2e/2-advanced-examples/actions.cy.js,cypress/e2e/2-advanced-examples/location.cy.js",
+    "cy:test:advanced:examples": "npx cypress run --spec cypress/e2e/2-advanced-examples/**/*",
+    "cy:test:firefox": "npx cypress run --browser firefox",
+    "cy:test:chrome:headed": "npx cypress run --browser chrome --headed",
+    "cy:test:edge": "npx cypress run --browser edge",
+    "cy:test:chrome:testPages": "npx cypress run --browser chrome --spec 'cypress/e2e/testPages/**/*'",
+    "cy:test:firefox:simpleForm": "npx cypress run --browser firefox --headed --spec 'cypress/e2e/elementInteractions/simpleForm.cy.js'"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Lazar Valentina",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/skip-test": "^2.6.1",
+    "cy-verify-downloads": "^0.1.14",
+    "cypress": "^12.8.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.4.0"
+  }
+}
