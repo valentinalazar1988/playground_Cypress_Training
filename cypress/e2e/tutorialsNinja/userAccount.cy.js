@@ -18,7 +18,7 @@ describe('User Account', () => {
         cy.contains('h1', 'My Account Information').should('be.visible');
 
     });
-    
+
     it('Logged in user should have access to Change your password page', () => {
         cy.userLogin();
         cy.contains('a', 'Change your password')
